@@ -6,7 +6,7 @@ function convertMarkdown(){
  let markdown=markInput.value;
  markdown=markdown.replace(/^###\s+(.*)$/gm,"<h3>$1</h3>");
  markdown=markdown.replace(/^##\s+(.*)$/gm,"<h2>$1</h2>");
- markdown=markdown.replace(/^#\s(.*)$/gm,"<h1>$1</h2>");
+ markdown=markdown.replace(/^#\s(.*)$/gm,"<h1>$1</h1>");
  markdown=markdown.replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>");
  markdown=markdown.replace(/__(.*?)__/g,"<strong>$1</strong>");
  markdown=markdown.replace(/\*(.*?)\*/g,"<em>$1</em>");
